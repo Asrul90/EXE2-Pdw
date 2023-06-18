@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>DOM Javascript</title>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h3>Pendaftaran Peminatan</h3>
+</div>
+<form action="">
+<label for="nama">Nama</label><br>
+<input type="text" placeholder="Nama anda" id="nama"
+required><br><br>
+<label for="nim">NIM</label><br>
+<input type="text" placeholder="NIM anda" id="nim" required><br>
+<p>Peminatan pada bidang:</p>
+<input type="radio" name="peminatan" id="programming"
+value="programming">
+<label for="programming">Programming</label><br>
+<input type="radio" name="peminatan" id="desain" value="desain">
+<label for="desain">Desain</label><br>
+<input type="radio" name="peminatan" id="jaringan" value="jaringan">
+<label for="jaringan">Jaringan</label><br>
+<input type="radio" name="peminatan" id="data" value="data">
+<label for="data">Data</label><br>
+<label for="">Alamat</label><br>
+<textarea placeholder="Tulis Alamatmu Disini" name="alamat"
+id="alamat" cols="30"
+rows="5"></textarea><br><br>
+<label for="angkatan">Pilih Angkatan:</label><br>
+<select id="angkatan">
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+</select><br>
+<label for="tanggal">Tanggal</label><br>
+<input type="date" id="tanggal"><br><br>
+<div class="button-container">
+    <button type="submit" onclick="kirimData()" class="button"><i
+            class="fas fa-paper-plane"></i>Kirim</button>
+    <a href="HTMLCH5.html" class="button"><i class="fas fa-arrow-left"></i>Kembali</a>
+</div>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
